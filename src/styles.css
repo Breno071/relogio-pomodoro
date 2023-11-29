@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --primary: #1976d2;
+    --body: #fff;
+    --text-menu: #fff;
+    --text-body:#000000;
+}
+
+:root .dark-mode{
+    --primary: #45474b;
+    --body: #4b4b4b;
+    --text-menu:#fff;
+    --text-body:#fff;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--body);
+}
+
+a{
+    color: var(--text-menu) !important;
+}
+
+button{
+    color: var(--text-menu) !important;
+}
+
+label{
+    color: var(--text-menu) !important;
+}

@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-lg dark-theme">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Pomodoro</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+            </ul>
+            <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                <input (click)="darkMode()" [checked]="darkMode" type="checkbox" class="btn-check" id="btnModoNoturno" autocomplete="off">
+                <label class="btn btn-outline-dark" for="btnModoNoturno">{{modo}}</label>
+            </div>
+        </div>
+    </div>
+</nav>

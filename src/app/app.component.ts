@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pomodoro';
+
+  darkMode(isDarkMode: boolean) {
+    console.log(isDarkMode)
+  }
 }
