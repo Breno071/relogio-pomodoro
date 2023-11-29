@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './pomodoro.component.css'
 })
 export class PomodoroComponent {
-
+  pomodoroTime: number = 25.00;
 }

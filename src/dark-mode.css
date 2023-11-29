@@ -1,0 +1,42 @@
+:root {
+    --primary: #ebebeb;
+    --secondary: #ffffff;
+    --body: #fff;
+    --text-menu: #000000;
+    --text-btn:#ffffff;
+    --text-btn:#ffffff;
+    --btn-color: black;
+}
+
+:root .dark-mode{
+    --primary: #45474b;
+    --secondary: #737373;
+    --body: #4b4b4b;
+    --text-menu:#ffffff;
+    --text-btn:#000000;
+    --text-label:#ffffff;
+    --btn-color: #ffffff;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary);
+}
+
+a{
+    color: var(--text-menu) !important;
+}
+
+button{
+    color: var(--text-menu) !important;
+}
+
+label{
+    color: var(--text-label) !important;
+}
+
+div{
+    color: var(--text-btn) !important;
+}

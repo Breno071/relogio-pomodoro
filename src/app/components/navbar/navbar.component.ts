@@ -7,16 +7,15 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class NavbarComponent {
   darkModeEnabled: boolean = false;
-  modo: string = 'Modo Dia';
+  modo: string = this.darkModeEnabled ? 'Modo Dia' : 'Modo Noturno';
 
   @Output()
   darkModeEvent: EventEmitter<any> = new EventEmitter<any>();
 
   darkMode() {
     this.darkModeEnabled = !this.darkModeEnabled;
-    this.darkModeEnabled ? this.modo = 'Modo Dia' : this.modo = 'Modo Noturna';
+    this.darkModeEnabled ? this.modo = 'Modo Dia' : this.modo = 'Modo Noturno';
     this.darkModeEvent.emit(this.darkModeEnabled);
     document.body.classList.toggle('dark-mode');
-    document.querySelector('.dark-theme')?.classList.toggle('dark-mode');
   }
 }

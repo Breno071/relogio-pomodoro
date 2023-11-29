@@ -1,0 +1,35 @@
+.container{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--secondary);
+}
+
+.pomodoro-option{
+    cursor: pointer;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: var(--secondary);
+    color: var(--text-menu) !important;
+}
+
+.pomodoro-option:hover{
+    background-color: var(--body) !important;
+}
+
+.pomodoro-time{
+    color: var(--text-menu) !important;
+}
+
+.btn-iniciar{
+    background-color: var(--btn-color);
+    color: var(--text-btn) !important;
+    border-radius: 5px;
+    padding: 20px 5px 20px 5px;
+    cursor: pointer;
+    width: 30%;
+    font-size: 36px;
+    outline: none;
+    border: none;
+}
