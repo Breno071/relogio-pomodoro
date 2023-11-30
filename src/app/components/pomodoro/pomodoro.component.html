@@ -1,14 +1,17 @@
-<div class="container">
-    <div class="d-flex justify-content-evenly">
-        <span class="pomodoro-option">Pomodoro</span>
-        <span class="pomodoro-option">Short Break</span>
-        <span class="pomodoro-option">Long Break</span>
-    </div>
-    <div class="d-flex justify-content-center">
-        <!-- Formata o numero do pomodora para o padrao 00:00 -->
-        <span class="display-1 pomodoro-time">{{pomodoroTime.toLocaleString('pt-BR', {minimumFractionDigits: 2, maximumFractionDigits: 2}).replace(',', ':')}}</span>
-    </div>
-    <div class="w-100 text-center">
-        <button class="btn-iniciar">Iniciar</button>
-    </div>
+<div class="d-flex justify-content-center">
+    <!-- Formata o numero do pomodora para o padrao 00:00 -->
+    <span class="display-1 pomodoro-time">{{minutos}}:{{!segundos? segundos + "0" : segundos}}</span>
+</div>
+<div class="w-100 text-center">
+    <ng-container *ngIf="!rodando; then thenTemplate; else elseTemplate"></ng-container>
+    <ng-template #thenTemplate>
+        <button #btnIniciar (click)="iniciar()" type="button" class="btn-iniciar">Iniciar</button>
+    </ng-template>
+    <ng-template #elseTemplate>
+        <button #btnIniciar (click)="pausar()" type="button" class="btn-iniciar">Pausar</button>
+    </ng-template>
+
+</div>
+<div class="w-100 d-flex justify-content-end">
+    <button class="btn btn-info" (click)="reiniciar()">Reiniciar</button>
 </div>

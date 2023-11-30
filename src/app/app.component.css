@@ -1,0 +1,23 @@
+.container{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--secondary);
+}
+
+.pomodoro-option{
+    cursor: pointer;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: var(--secondary);
+    color: var(--text-menu) !important;
+}
+
+.pomodoro-option:hover{
+    background-color: var(--body) !important;
+}
+
+.pomodoro-time{
+    color: var(--text-menu) !important;
+}
