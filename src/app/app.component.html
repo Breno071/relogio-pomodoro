@@ -1,9 +1,11 @@
 <app-navbar></app-navbar>
 <div class="container">
     <div class="d-flex justify-content-evenly">
-        <span class="pomodoro-option">Pomodoro</span>
-        <span class="pomodoro-option">Short Break</span>
-        <span class="pomodoro-option">Long Break</span>
+        <a class="pomodoro-option" [routerLink]="[ '/' ]" routerLinkActive="active">Pomodoro</a>
+        <!-- <span class="pomodoro-option">Pomodoro</span> -->
+        <a class="pomodoro-option" [routerLink]="[ '/short-break']">Short Break</a>
+        <!-- <span class="pomodoro-option">Short Break</span> -->
+        <a class="pomodoro-option" [routerLink]="[ '/long-break']">Long Break</a>
     </div>
     <router-outlet></router-outlet>
 </div>
